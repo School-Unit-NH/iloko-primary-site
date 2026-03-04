@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router';
+import { createMemoryRouter, RouterProvider } from 'react-router-dom';
 import Layout from './components/layout/Layout';
 import Home from './pages/Home';
 import About from './pages/About';
@@ -7,20 +7,32 @@ import Academics from './pages/Academics';
 import Gallery from './pages/Gallery';
 import Contact from './pages/Contact';
 
+import { StrictMode } from 'react'
+import { MotionConfig } from 'framer-motion'
+
+export const routes = [
+  {
+    path: "/",
+    element: <Layout />,
+    children: [
+      { index: true, element: <Home /> },
+      { path: "about", element: <About /> },
+      { path: "admissions", element: <Admissions /> },
+      { path: "academics", element: <Academics /> },
+      { path: "gallery", element: <Gallery /> },
+      { path: "contact", element: <Contact /> },
+    ]
+  }
+];
+const router = createMemoryRouter(routes);
+
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route index element={<Home />} />
-          <Route path="about" element={<About />} />
-          <Route path="admissions" element={<Admissions />} />
-          <Route path="academics" element={<Academics />} />
-          <Route path="gallery" element={<Gallery />} />
-          <Route path="contact" element={<Contact />} />
-        </Route>
-      </Routes>
-    </BrowserRouter>
+    <StrictMode>
+      <MotionConfig reducedMotion="user">
+        <RouterProvider router={router} />
+      </MotionConfig>
+    </StrictMode>
   );
 }
 

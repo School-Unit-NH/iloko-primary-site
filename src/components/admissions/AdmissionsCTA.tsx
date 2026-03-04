@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { ArrowRight, BookOpen } from 'lucide-react';
-import { NavLink } from 'react-router';
+import { NavLink } from 'react-router-dom';
 
 const AdmissionsCTA = () => {
     return (
