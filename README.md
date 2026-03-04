@@ -1,6 +1,6 @@
-# Iroko (Iloko) Primary School Website
+# Iloko Primary School Website
 
-A modern, high-performance static website for Iroko (Iloko) Primary School, built with React 19 and Vite.
+A modern, high-performance static website for Iloko Primary School, built with React 19 and Vite.
 
 ## 🚀 Project Overview
 
