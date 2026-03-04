@@ -4,14 +4,14 @@ import { Quote } from 'lucide-react';
 const LeadershipMessage = () => {
     return (
         <section className="py-24 bg-iloko-red text-white relative overflow-hidden">
-            {/* Background elements */}
+
             <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-iloko-blue/20 rounded-full blur-3xl translate-x-1/2 -translate-y-1/2 pointer-events-none"></div>
             <div className="absolute bottom-0 left-0 w-[300px] h-[300px] bg-iloko-yellow/10 rounded-full blur-3xl -translate-x-1/2 translate-y-1/2 pointer-events-none"></div>
 
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                 <div className="flex flex-col lg:flex-row items-center gap-16 lg:gap-24">
 
-                    {/* Image side */}
+
                     <motion.div
                         className="w-full lg:w-5/12"
                         initial={{ opacity: 0, scale: 0.9 }}
@@ -29,7 +29,7 @@ const LeadershipMessage = () => {
                         </div>
                     </motion.div>
 
-                    {/* Text side */}
+
                     <motion.div
                         className="w-full lg:w-7/12"
                         initial={{ opacity: 0, x: 50 }}

@@ -3,11 +3,11 @@ import { motion } from 'framer-motion';
 const AcademicsHero = () => {
     return (
         <section className="relative h-screen flex items-center justify-center overflow-hidden">
-            {/* Background image overlay */}
+
             <div
                 className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
                 style={{
-                    backgroundImage: 'url("https://images.unsplash.com/photo-1577896851231-70ef18881754?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80")', // Library/Study image
+                    backgroundImage: 'url("https://images.unsplash.com/photo-1577896851231-70ef18881754?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80")',
                 }}
             >
                 <div className="absolute inset-0 bg-black/40 mix-blend-multiply"></div>
@@ -43,7 +43,7 @@ const AcademicsHero = () => {
                 </motion.p>
             </div>
 
-            {/* Scroll indicator */}
+
             <motion.div
                 className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center text-white/70"
                 initial={{ opacity: 0 }}

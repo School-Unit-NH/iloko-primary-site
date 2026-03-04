@@ -2,7 +2,7 @@ import { useState, useMemo, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X, ZoomIn, Loader2 } from 'lucide-react';
 
-// Sample gallery data with categories (expanded for pagination demo)
+
 const generateMockImages = () => {
     const categories = ["Campus", "Academics", "Sports", "Events"];
     const baseImages = [
@@ -38,13 +38,13 @@ const GalleryGrid = () => {
     const [visibleCount, setVisibleCount] = useState(IMAGES_PER_PAGE);
     const [isLoading, setIsLoading] = useState(false);
 
-    // Filter images based on selected category
+
     const filteredImages = useMemo(() => {
         if (activeCategory === "All") return galleryImages;
         return galleryImages.filter(img => img.category === activeCategory);
     }, [activeCategory]);
 
-    // Images to currently display based on pagination count
+
     const displayedImages = useMemo(() => {
         return filteredImages.slice(0, visibleCount);
     }, [filteredImages, visibleCount]);
@@ -53,10 +53,10 @@ const GalleryGrid = () => {
 
     const handleCategoryChange = (category: string) => {
         setActiveCategory(category);
-        setVisibleCount(IMAGES_PER_PAGE); // Reset count when changing categories
+        setVisibleCount(IMAGES_PER_PAGE);
     };
 
-    // Handle closing modal on escape key
+
     useEffect(() => {
         const handleKeyDown = (e: KeyboardEvent) => {
             if (e.key === 'Escape') setSelectedImage(null);
@@ -67,7 +67,7 @@ const GalleryGrid = () => {
 
     const handleLoadMore = () => {
         setIsLoading(true);
-        // Simulate network delay for smooth interactive feel
+
         setTimeout(() => {
             setVisibleCount(prev => prev + IMAGES_PER_PAGE);
             setIsLoading(false);
@@ -78,7 +78,7 @@ const GalleryGrid = () => {
         <section className="py-20 bg-slate-50 min-h-screen relative z-20 -mt-10 rounded-t-[3rem]">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-                {/* Visual Category Navigation */}
+
                 <div className="mb-12 flex flex-wrap justify-center gap-3">
                     {categories.map((category) => (
                         <button
@@ -94,7 +94,7 @@ const GalleryGrid = () => {
                     ))}
                 </div>
 
-                {/* Animated Masonry-style Grid */}
+
                 <motion.div
                     layout
                     className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 auto-rows-[300px]"
@@ -108,9 +108,7 @@ const GalleryGrid = () => {
                                 exit={{ opacity: 0, scale: 0.8 }}
                                 transition={{ duration: 0.4, ease: "easeOut", delay: (index % IMAGES_PER_PAGE) * 0.05 }}
                                 key={image.id}
-                                className={`relative group overflow-hidden rounded-2xl bg-white shadow-sm hover:shadow-xl transition-shadow duration-300 cursor-pointer ${
-                                    // Make every 4th image take up 2 rows for masonry effect, except on mobile
-                                    index % 4 === 0 ? 'sm:row-span-2' : ''
+                                className={`relative group overflow-hidden rounded-2xl bg-white shadow-sm hover:shadow-xl transition-shadow duration-300 cursor-pointer ${index % 4 === 0 ? 'sm:row-span-2' : ''
                                     }`}
                                 onClick={() => setSelectedImage(image.src)}
                             >
@@ -120,7 +118,7 @@ const GalleryGrid = () => {
                                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                                     loading="lazy"
                                 />
-                                {/* Overlay pattern */}
+
                                 <div className="absolute inset-0 bg-gradient-to-t from-iloko-red/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
                                     <div className="translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
                                         <div className="flex items-end justify-between">
@@ -143,14 +141,14 @@ const GalleryGrid = () => {
                     </AnimatePresence>
                 </motion.div>
 
-                {/* Empty State */}
+
                 {filteredImages.length === 0 && (
                     <div className="text-center py-20 text-slate-500">
                         No images found for this category.
                     </div>
                 )}
 
-                {/* Load More Button */}
+
                 {hasMoreImages && (
                     <div className="mt-16 flex justify-center">
                         <button
@@ -168,14 +166,14 @@ const GalleryGrid = () => {
                                     "Load More Photos"
                                 )}
                             </span>
-                            {/* Hover effect background */}
+
                             <div className="absolute inset-0 bg-iloko-red/5 translate-y-[100%] group-hover:translate-y-0 transition-transform duration-300 rounded-full"></div>
                         </button>
                     </div>
                 )}
             </div>
 
-            {/* Fullscreen Image Modal (Lightbox) */}
+
             <AnimatePresence>
                 {selectedImage && (
                     <motion.div
@@ -201,7 +199,7 @@ const GalleryGrid = () => {
                             src={selectedImage}
                             alt="Enlarged gallery view"
                             className="max-w-full max-h-[90vh] object-contain rounded-lg shadow-2xl"
-                            onClick={(e) => e.stopPropagation()} // Prevent closing when clicking the image itself
+                            onClick={(e) => e.stopPropagation()}
                         />
                     </motion.div>
                 )}

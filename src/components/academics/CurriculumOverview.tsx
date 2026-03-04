@@ -29,7 +29,7 @@ const CurriculumOverview = () => {
 
                 <div className="grid lg:grid-cols-2 gap-12 lg:gap-8">
 
-                    {/* JSS Track */}
+
                     <motion.div
                         className="bg-slate-50 rounded-3xl p-8 md:p-10 border border-slate-100 hover:border-iloko-yellow/30 transition-colors duration-300 group"
                         initial={{ opacity: 0, y: 30 }}
@@ -63,7 +63,7 @@ const CurriculumOverview = () => {
                         </div>
                     </motion.div>
 
-                    {/* SSS Track */}
+
                     <motion.div
                         className="bg-iloko-red text-white rounded-3xl p-8 md:p-10 shadow-xl relative overflow-hidden group"
                         initial={{ opacity: 0, y: 30 }}
@@ -71,7 +71,7 @@ const CurriculumOverview = () => {
                         viewport={{ once: true }}
                         transition={{ duration: 0.5, delay: 0.3 }}
                     >
-                        {/* Decorative background element */}
+
                         <div className="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full blur-3xl translate-x-1/3 -translate-y-1/3 transition-transform duration-700 group-hover:scale-150"></div>
 
                         <div className="relative z-10">

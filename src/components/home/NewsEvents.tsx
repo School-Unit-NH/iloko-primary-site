@@ -29,7 +29,7 @@ const NewsEvents = () => {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-16">
 
-                    {/* News Section */}
+
                     <div className="lg:col-span-2">
                         <div className="flex justify-between items-center mb-10">
                             <h2 className="text-4xl font-serif font-bold text-iloko-red">Latest News</h2>
@@ -66,7 +66,7 @@ const NewsEvents = () => {
                         </div>
                     </div>
 
-                    {/* Events Sidebar */}
+
                     <div className="lg:col-span-1">
                         <div className="flex justify-between items-center mb-10">
                             <h2 className="text-4xl font-serif font-bold text-iloko-red">Upcoming</h2>

@@ -29,7 +29,7 @@ const TuitionAndScholarships = () => {
 
                 <div className="grid lg:grid-cols-2 gap-12 items-stretch">
 
-                    {/* Tuition Overview Card */}
+
                     <motion.div
                         className="bg-white rounded-3xl p-8 md:p-12 shadow-xl border border-slate-100 flex flex-col h-full"
                         initial={{ opacity: 0, x: -30 }}
@@ -81,7 +81,7 @@ const TuitionAndScholarships = () => {
                         </div>
                     </motion.div>
 
-                    {/* Scholarships Card */}
+
                     <motion.div
                         className="bg-iloko-red rounded-3xl p-8 md:p-12 shadow-xl text-white flex flex-col h-full relative overflow-hidden"
                         initial={{ opacity: 0, x: 30 }}
@@ -89,7 +89,7 @@ const TuitionAndScholarships = () => {
                         viewport={{ once: true }}
                         transition={{ duration: 0.6, delay: 0.2 }}
                     >
-                        {/* Decorative background circle */}
+
                         <div className="absolute top-0 right-0 w-64 h-64 bg-iloko-yellow/10 rounded-full blur-3xl translate-x-1/3 -translate-y-1/3"></div>
 
                         <div className="relative z-10 flex flex-col h-full">

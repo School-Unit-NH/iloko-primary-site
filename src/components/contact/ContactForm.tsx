@@ -10,15 +10,15 @@ const ContactForm = () => {
         e.preventDefault();
         setIsSubmitting(true);
 
-        // Simulate network request for demonstration purposes
+
         setTimeout(() => {
             setIsSubmitting(false);
             setIsSubmitted(true);
 
-            // Reset state after a few seconds
+
             setTimeout(() => {
                 setIsSubmitted(false);
-                // In a real app, we'd also reset the form fields here
+
                 const form = document.getElementById('contact-form') as HTMLFormElement;
                 if (form) form.reset();
             }, 5000);
@@ -141,7 +141,7 @@ const ContactForm = () => {
                                     </>
                                 )}
                             </span>
-                            {/* Hover effect background */}
+
                             <div className="absolute inset-0 bg-iloko-green translate-y-[100%] group-hover:translate-y-0 transition-transform duration-300 rounded-xl z-0"></div>
                         </button>
                     </form>

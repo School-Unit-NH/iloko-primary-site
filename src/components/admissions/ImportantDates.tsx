@@ -50,7 +50,7 @@ const ImportantDates = () => {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex flex-col lg:flex-row gap-16 items-start">
 
-                    {/* Sticky Sidebar Info */}
+
                     <div className="lg:w-1/3 lg:sticky lg:top-32">
                         <motion.span
                             className="text-iloko-yellow font-semibold tracking-wider uppercase text-sm mb-4 block"
@@ -97,7 +97,7 @@ const ImportantDates = () => {
                         </motion.div>
                     </div>
 
-                    {/* Timeline / Cards */}
+
                     <div className="lg:w-2/3 w-full space-y-6">
                         {dates.map((item, index) => (
                             <motion.div
@@ -108,7 +108,7 @@ const ImportantDates = () => {
                                 viewport={{ once: true }}
                                 transition={{ duration: 0.5, delay: index * 0.1 }}
                             >
-                                {/* Date Box */}
+
                                 <div className="bg-iloko-red text-white rounded-xl p-4 min-w-[120px] text-center shrink-0 group-hover:bg-iloko-green transition-colors duration-300">
                                     <span className="block text-sm font-medium opacity-80 uppercase tracking-wider mb-1">
                                         {item.date.split(' ')[0]}
@@ -121,7 +121,7 @@ const ImportantDates = () => {
                                     </span>
                                 </div>
 
-                                {/* Details */}
+
                                 <div className="flex-1">
                                     <h3 className="text-2xl font-bold text-iloko-red mb-3 group-hover:text-iloko-green transition-colors">
                                         {item.title}
@@ -138,7 +138,7 @@ const ImportantDates = () => {
                                     </div>
                                 </div>
 
-                                {/* Icon indicator based on type */}
+
                                 <div className="hidden sm:flex shrink-0 w-12 h-12 rounded-full bg-slate-50 items-center justify-center text-slate-400 group-hover:scale-110 group-hover:bg-iloko-yellow/10 group-hover:text-iloko-yellow transition-all duration-300">
                                     <Calendar size={24} />
                                 </div>

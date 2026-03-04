@@ -3,11 +3,11 @@ import { motion } from 'framer-motion';
 const GalleryHero = () => {
     return (
         <section className="relative min-h-[70vh] flex flex-col items-center justify-center overflow-hidden">
-            {/* Background image overlay */}
+
             <div
                 className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat transition-transform duration-1000"
                 style={{
-                    backgroundImage: 'url("https://images.unsplash.com/photo-1576267423048-15c0040fec78?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80")', // School event/gathering image
+                    backgroundImage: 'url("https://images.unsplash.com/photo-1576267423048-15c0040fec78?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80")',
                 }}
             >
                 <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-black/10 mix-blend-multiply"></div>

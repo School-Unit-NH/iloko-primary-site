@@ -5,7 +5,7 @@ import { NavLink } from 'react-router';
 const HeroSection = () => {
     return (
         <section className="relative h-screen flex items-center justify-center overflow-hidden">
-            {/* Background image overlay */}
+
             <div
                 className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
                 style={{
@@ -67,7 +67,7 @@ const HeroSection = () => {
                 </motion.div>
             </div>
 
-            {/* Scroll indicator */}
+
             <motion.div
                 className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center text-white/70"
                 initial={{ opacity: 0 }}

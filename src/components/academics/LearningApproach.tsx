@@ -35,7 +35,7 @@ const LearningApproach = () => {
 
                 <div className="flex flex-col lg:flex-row gap-16 items-center">
 
-                    {/* Image / Visual Side */}
+
                     <div className="lg:w-1/2 relative">
                         <motion.div
                             className="relative rounded-3xl overflow-hidden aspect-[4/5] shadow-2xl"
@@ -49,21 +49,21 @@ const LearningApproach = () => {
                                 alt="Students collaborating on a project"
                                 className="w-full h-full object-cover"
                             />
-                            {/* Overlay gradient */}
+
                             <div className="absolute inset-0 bg-gradient-to-t from-iloko-red/80 via-transparent to-transparent"></div>
 
-                            {/* Overlay text */}
+
                             <div className="absolute bottom-0 left-0 p-8 w-full">
                                 <p className="text-white text-lg font-medium italic">"Education is not the learning of facts, but the training of the mind to think."</p>
                             </div>
                         </motion.div>
 
-                        {/* Decorative elements */}
+
                         <div className="absolute -top-6 -left-6 w-32 h-32 bg-iloko-yellow/20 rounded-full blur-2xl -z-10"></div>
                         <div className="absolute -bottom-8 -right-8 w-40 h-40 bg-iloko-green/20 rounded-full blur-2xl -z-10"></div>
                     </div>
 
-                    {/* Content Side */}
+
                     <div className="lg:w-1/2">
                         <motion.span
                             className="text-iloko-green font-semibold tracking-wider uppercase text-sm mb-4 block"

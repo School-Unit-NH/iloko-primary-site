@@ -4,7 +4,7 @@ import { Download, CalendarDays } from 'lucide-react';
 const AcademicCTA = () => {
     return (
         <section className="py-20 bg-iloko-yellow relative overflow-hidden">
-            {/* Background patterns */}
+
             <div className="absolute inset-0 opacity-10">
                 <svg className="w-full h-full" xmlns="http://www.w3.org/2000/svg">
                     <defs>

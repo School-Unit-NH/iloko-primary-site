@@ -5,10 +5,10 @@ import { NavLink } from 'react-router';
 const AdmissionsCTA = () => {
     return (
         <section className="py-24 relative overflow-hidden bg-iloko-red">
-            {/* Background Texture/Pattern */}
+
             <div className="absolute inset-0 opacity-10" style={{ backgroundImage: 'radial-gradient(#ffffff 1px, transparent 1px)', backgroundSize: '30px 30px' }}></div>
 
-            {/* Soft glow effects */}
+
             <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-iloko-green/20 rounded-full blur-[100px] -translate-y-1/2 translate-x-1/3"></div>
             <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-iloko-yellow/20 rounded-full blur-[80px] translate-y-1/3 -translate-x-1/4"></div>
 

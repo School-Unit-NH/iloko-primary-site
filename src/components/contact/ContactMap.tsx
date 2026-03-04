@@ -3,7 +3,7 @@ import { MapPin } from 'lucide-react';
 const ContactMap = () => {
     return (
         <section className="bg-slate-50 py-12 relative overflow-hidden">
-            {/* Visual Header above map */}
+
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-8 text-center sm:text-left flex items-center justify-center sm:justify-start gap-4">
                 <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-md text-iloko-green">
                     <MapPin size={24} />
@@ -12,11 +12,7 @@ const ContactMap = () => {
             </div>
 
             <div className="w-[80%] mx-auto rounded-2xl overflow-hidden h-[500px] bg-slate-200 relative">
-                {/* 
-                 * Standard Google Maps Embed.
-                 * To make it functional, the src url needs an API key or an updated embed link from Google Maps UI.
-                 * For now, this is a placeholder URL using typical embed formatting.
-                 */}
+ 
                 <iframe
                     className="absolute inset-0 w-full h-full"
                     title="Iloko Primary School Campus Map"

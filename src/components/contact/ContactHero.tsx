@@ -3,14 +3,14 @@ import { motion } from 'framer-motion';
 const ContactHero = () => {
     return (
         <section className="relative min-h-[60vh] flex flex-col items-center justify-center overflow-hidden">
-            {/* Background Image */}
+
             <div
                 className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat transition-transform duration-1000"
                 style={{
-                    backgroundImage: 'url("https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80")', // Welcoming entrance/office image
+                    backgroundImage: 'url("https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80")',
                 }}
             >
-                {/* Dark overlay for text readability */}
+
                 <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-black/10 mix-blend-multiply"></div>
             </div>
 
@@ -44,7 +44,7 @@ const ContactHero = () => {
                 </motion.p>
             </div>
 
-     </section>
+        </section>
     );
 };
 

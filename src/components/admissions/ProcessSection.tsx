@@ -47,7 +47,7 @@ const processSteps = [
 const ProcessSection = () => {
     return (
         <section className="py-24 bg-slate-50 relative overflow-hidden">
-            {/* Background elements */}
+
             <div className="absolute top-0 right-0 w-64 h-64 bg-iloko-yellow/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
             <div className="absolute bottom-0 left-0 w-96 h-96 bg-iloko-red/5 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2"></div>
 
@@ -74,7 +74,7 @@ const ProcessSection = () => {
                 </div>
 
                 <div className="relative">
-                    {/* Connecting line for larger screens */}
+
                     <div className="hidden lg:block absolute top-[45px] left-0 w-full h-[2px] bg-slate-200 z-0"></div>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-4 relative z-10">
@@ -89,7 +89,7 @@ const ProcessSection = () => {
                             >
                                 <div className={`w-24 h-24 rounded-full flex items-center justify-center ${step.bgColor} shadow-md border-4 border-white mb-6 group-hover:scale-110 transition-transform duration-300 relative`}>
                                     <step.icon size={36} className={step.color} />
-                                    {/* Step number badge */}
+
                                     <div className="absolute -top-2 -right-2 w-8 h-8 rounded-full bg-iloko-red text-white flex items-center justify-center font-bold text-sm border-2 border-white">
                                         {step.id}
                                     </div>

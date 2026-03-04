@@ -6,7 +6,7 @@ const HistorySection = () => {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex flex-col lg:flex-row items-center gap-16">
 
-                    {/* Text side */}
+
                     <motion.div
                         className="w-full lg:w-1/2 order-2 lg:order-1"
                         initial={{ opacity: 0, x: -50 }}
@@ -32,7 +32,7 @@ const HistorySection = () => {
                         </div>
                     </motion.div>
 
-                    {/* Image side */}
+
                     <motion.div
                         className="w-full lg:w-1/2 relative order-1 lg:order-2"
                         initial={{ opacity: 0, x: 50 }}
@@ -46,14 +46,14 @@ const HistorySection = () => {
                                 alt="Historic campus building"
                                 className="w-full h-auto object-cover"
                             />
-                            {/* Overlay tag */}
+
                             <div className="absolute bottom-6 left-6 bg-white/90 backdrop-blur-sm p-4 rounded-xl border border-white/20 shadow-lg">
                                 <span className="block text-3xl font-bold text-iloko-red mb-1">Est. 1970</span>
                                 <span className="text-sm text-slate-600 font-semibold uppercase tracking-wider">A Legacy of Excellence</span>
                             </div>
                         </div>
 
-                        {/* Decorative background element */}
+
                         <div className="absolute -top-10 -right-10 w-64 h-64 bg-iloko-yellow/20 rounded-full blur-3xl z-0"></div>
                         <div className="absolute -bottom-10 -left-10 w-64 h-64 bg-iloko-blue/20 rounded-full blur-3xl z-0"></div>
                     </motion.div>
