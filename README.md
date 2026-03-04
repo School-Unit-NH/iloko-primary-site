@@ -1,73 +1,89 @@
-# React + TypeScript + Vite
+# Iroko (Iloko) Primary School Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, high-performance static website for Iroko (Iloko) Primary School, built with React 19 and Vite.
 
-Currently, two official plugins are available:
+## 🚀 Project Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This project is a complete rewrite of the school's online presence, transitioning from a secondary school context to a primary school focus. It is designed to be fast, SEO-friendly, and easy to maintain by developers.
 
-## React Compiler
+- **URL**: [https://github.com/School-Unit-NH/iloko-primary-site](https://github.com/School-Unit-NH/iloko-primary-site)
+- **Status**: Active Development / Production Ready
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
+## 🛠 Tech Stack
 
-## Expanding the ESLint configuration
+- **Framework**: [React 19](https://react.dev/)
+- **Bundler**: [Vite 7](https://vitejs.dev/)
+- **SSG Engine**: [vite-react-ssg](https://github.com/antfu/vite-react-ssg)
+- **Styling**: [Tailwind CSS 3](https://tailwindcss.com/)
+- **Animations**: [Framer Motion](https://www.framer.com/motion/)
+- **Icons**: [Lucide React](https://lucide.dev/)
+- **Routing**: [React Router](https://reactrouter.com/)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 📂 Project Structure
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```text
+src/
+├── components/          # Reusable UI components
+│   ├── about/           # Components for the About page
+│   ├── academics/       # Components for the Academics section
+│   ├── admissions/      # Enrollment and pricing components
+│   ├── contact/         # Forms and contact info
+│   ├── gallery/         # Image and video displays
+│   ├── home/            # Homepage-specific sections
+│   └── layout/          # Footer, Navbar, and Shell
+├── pages/               # Top-level Page components (Home, About, etc.)
+├── App.tsx              # Application shell and Routes definition
+├── main.tsx             # Entry point (ViteReactSSG setup)
+└── index.css            # Global styles and Tailwind imports
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🛠 Development & Build
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### Installation
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm install
 ```
+
+### Local Development
+
+Runs the project in development mode with HMR.
+
+```bash
+npm run dev
+```
+
+### Static Build (Recommended for Production)
+
+This project uses **Static Site Generation (SSG)** to ensure maximum compatibility with static hostings (like CPanel) and optimal SEO.
+
+```bash
+npm run build:static
+```
+
+**Why `build:static`?**
+- **SEO**: Generates actual HTML files for every route, making it easily indexable by search engines.
+- **Performance**: Near-instant initial load as the browser receives pre-rendered HTML.
+- **Compatibility**: Works on any host that can serve static files (CPanel `public_html`, Netlify, Vercel, etc.) without needing a Node.js runtime for the client.
+
+### Standard Build
+
+Standard Single Page Application (SPA) build. Uses standard Vite build process.
+
+```bash
+npm run build
+```
+
+## 📋 Maintenance Guide
+
+### Adding a New Page
+1. Create a new component in `src/pages/`.
+2. Add the route configuration in `src/App.tsx`.
+3. If using `build:static`, the new route will automatically be picked up and rendered to HTML during the build process.
+
+### Updating Styles
+Tailwind CSS is used for all styling. Global tokens (colors, fonts) are defined in `tailwind.config.js`.
+
+## 📄 License
+
+Private - All rights reserved.
