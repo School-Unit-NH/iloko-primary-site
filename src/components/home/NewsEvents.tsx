@@ -1,18 +1,19 @@
 import { Calendar, ArrowRight } from 'lucide-react';
+import { class1, schoolView4 } from '../../assets';
 
 const news = [
     {
         category: "Campus News",
         title: "Iloko Science Team Wins Lagos State Science Olympiad",
         date: "Oct 15, 2026",
-        image: "https://images.unsplash.com/photo-1564069114553-7215e1ff1890?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+        image: class1,
         excerpt: "Our upper primary robotics team secured first place at the highly competitive state tournament..."
     },
     {
         category: "Events",
         title: "Annual Inter-House Sports Competition Approaching",
         date: "Nov 02, 2026",
-        image: "https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+        image: schoolView4,
         excerpt: "Join us for a weekend celebrating the incredible athletic and sportsmanship talents of our students."
     }
 ];
