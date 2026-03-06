@@ -39,7 +39,7 @@ const LeadershipMessage = () => {
                     >
                         <Quote className="w-16 h-16 text-iloko-yellow/50 mb-6" />
 
-                        <h2 className="text-3xl md:text-4xl font-serif font-bold mb-6 leading-tight">
+                        <h2 className="text-3xl md:text-4xl font-serif font-bold mb-6 leading-tight text-white">
                             "Education is not just about academic excellence; it is about building the character required to use that knowledge for the good of society."
                         </h2>
 

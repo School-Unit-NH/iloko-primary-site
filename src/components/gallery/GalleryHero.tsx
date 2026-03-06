@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import { Students2 } from '../../assets';
 
 const GalleryHero = () => {
     return (
@@ -7,7 +8,7 @@ const GalleryHero = () => {
             <div
                 className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat transition-transform duration-1000"
                 style={{
-                    backgroundImage: 'url("https://images.unsplash.com/photo-1576267423048-15c0040fec78?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80")',
+                    backgroundImage: `url("${Students2}")`,
                 }}
             >
                 <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-black/10 mix-blend-multiply"></div>

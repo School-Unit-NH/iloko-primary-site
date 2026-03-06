@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { Microscope, Code, Lightbulb, Presentation } from 'lucide-react';
+import { schoolView2 } from '../../assets';
 
 const approaches = [
     {
@@ -45,7 +46,7 @@ const LearningApproach = () => {
                             transition={{ duration: 0.7 }}
                         >
                             <img loading="lazy"
-                                src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1471&q=80"
+                                src={schoolView2}
                                 alt="Students collaborating on a project"
                                 className="w-full h-full object-cover"
                             />

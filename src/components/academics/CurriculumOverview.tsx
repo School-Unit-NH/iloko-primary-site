@@ -78,7 +78,7 @@ const CurriculumOverview = () => {
                             <div className="w-16 h-16 bg-iloko-yellow text-iloko-red rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
                                 <GraduationCap size={32} />
                             </div>
-                            <h3 className="text-3xl font-bold mb-4">Upper Primary <span className="text-xl font-normal text-slate-300 block sm:inline mt-1 sm:mt-0">(Primary 4 - 6)</span></h3>
+                            <h3 className="text-3xl text-iloko-white font-bold mb-4">Upper Primary <span className="text-xl font-normal text-slate-300 block sm:inline mt-1 sm:mt-0">(Primary 4 - 6)</span></h3>
                             <p className="text-slate-300 mb-6 leading-relaxed">
                                 In Upper Primary, students build upon their foundations with more rigorous academic preparation. We emphasize independent thinking, problem-solving, and deep analytical skills across all core subjects to prepare them for secondary education.
                             </p>

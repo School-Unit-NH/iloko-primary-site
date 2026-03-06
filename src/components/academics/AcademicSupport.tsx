@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { BookMarked, UserPlus, HeartHandshake } from 'lucide-react';
+import { class1, class2, schoolView3 } from '../../assets';
 
 const supportServices = [
     {
@@ -7,21 +8,21 @@ const supportServices = [
         title: "Modern Library & Resources",
         description: "Our expansive library is the academic heart of the school, housing thousands of volumes, digital databases, and quiet study zones to support research and independent learning.",
         icon: BookMarked,
-        image: "https://images.unsplash.com/photo-1541963463532-d68292c34b19?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+        image: class1,
     },
     {
         id: "support-tutoring",
         title: "Personalized Tutoring",
         description: "We offer specialized after-school clinics for core subjects. Teachers are available in small groups to help students master challenging concepts and prepare for major examinations.",
         icon: UserPlus,
-        image: "https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+        image: class2,
     },
     {
         id: "support-counseling",
         title: "Academic & Career Counseling",
         description: "Our dedicated counseling team guides students through course selection, university applications, and career exploration, ensuring they are well-prepared for life after Iloko.",
         icon: HeartHandshake,
-        image: "https://images.unsplash.com/photo-1521495084171-3ad639e3d525?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+        image: schoolView3,
     }
 ];
 
@@ -62,14 +63,18 @@ const AcademicSupport = () => {
                             viewport={{ once: true }}
                             transition={{ duration: 0.5, delay: index * 0.2 }}
                         >
-                            <div className="h-48 overflow-hidden relative">
-                                <img loading="lazy"
-                                    src={service.image}
-                                    alt={service.title}
-                                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
-                                />
-                                <div className="absolute inset-0 bg-iloko-red/20 group-hover:bg-transparent transition-colors duration-500"></div>
-                                <div className="absolute -bottom-6 right-6 w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-lg text-iloko-yellow z-10 group-hover:bg-iloko-yellow group-hover:text-white transition-colors duration-300">
+                            <div className="relative h-48">
+                                <div className="overflow-hidden h-full">
+                                    <img
+                                        loading="lazy"
+                                        src={service.image}
+                                        alt={service.title}
+                                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                                    />
+                                    <div className="absolute inset-0 bg-iloko-red/20 group-hover:bg-transparent transition-colors duration-500"></div>
+                                </div>
+
+                                <div className="absolute -bottom-6 right-6 w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-lg text-iloko-yellow z-20 group-hover:bg-iloko-yellow group-hover:text-white transition-colors duration-300">
                                     <service.icon size={24} />
                                 </div>
                             </div>

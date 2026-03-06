@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import { schoolView5 } from '../../assets';
 
 const HistorySection = () => {
     return (
@@ -42,7 +43,7 @@ const HistorySection = () => {
                     >
                         <div className="relative z-10 rounded-2xl overflow-hidden shadow-2xl">
                             <img loading="lazy"
-                                src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                                src={schoolView5}
                                 alt="Historic campus building"
                                 className="w-full h-auto object-cover"
                             />

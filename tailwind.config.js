@@ -8,11 +8,16 @@ export default {
     extend: {
       colors: {
         iloko: {
-          red: '#D91E36',    // Main background red
-          yellow: '#FFDE00', // Emblem yellow
-          blue: '#D2E5F7',   // Book page light blue
-          green: '#9ACD32',  // Slogan banner lime green
-          white: '#FFFFFF',  // Text and center highlight
+          // red: '#D91E36',    // Main background red
+          // yellow: '#FFDE00', // Emblem yellow
+          // blue: '#D2E5F7',   // Book page light blue
+          // green: '#9ACD32',  // Slogan banner lime green
+          // white: '#FFFFFF',  // Text and center highlight
+          red: '#C81C33',     // Slightly deeper red (less pink, more contrast)
+          yellow: '#FFD400',  // Warmer yellow, slightly less neon
+          blue: '#CFE3F6',    // Softened light blue for better harmony
+          green: '#92C72E',   // Slightly deeper lime green
+          white: '#FAFAFA',   // Softer white (less harsh than pure white)
         }
       },
       fontFamily: {

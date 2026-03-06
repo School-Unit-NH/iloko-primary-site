@@ -1,4 +1,6 @@
 import { motion } from 'framer-motion';
+import { contactUSView } from '../../assets';
+
 
 const ContactHero = () => {
     return (
@@ -7,11 +9,11 @@ const ContactHero = () => {
             <div
                 className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat transition-transform duration-1000"
                 style={{
-                    backgroundImage: 'url("https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80")',
+                    backgroundImage: `url("${contactUSView}")`,
                 }}
             >
 
-                <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-black/10 mix-blend-multiply"></div>
+                <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/40 to-black/70 mix-blend-multiply"></div>
             </div>
 
             <div className="relative z-10 text-center px-4 max-w-4xl mx-auto custom-hero-pt mt-16 md:mt-24">

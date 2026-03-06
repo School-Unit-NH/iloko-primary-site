@@ -6,9 +6,10 @@ const contactDetails = [
         icon: MapPin,
         title: "Visit Us",
         lines: [
-            "Iloko Primary School,",
+            "Iloko Primary School, "+
             "Ilesa-Akure Expressway,",
-            "Iloko-Ijesa, Osun State,",
+            " ",
+            "Iloko-Ijesa, Osun State,"+
             "Nigeria"
         ]
     },
@@ -80,7 +81,7 @@ const ContactInfoBox = () => {
                     </h3>
                     <div className="text-slate-600 leading-relaxed space-y-1">
                         {detail.lines.map((line, i) => (
-                            <p key={i} className={i % 2 === 0 && detail.title !== "Visit Us" && detail.title !== "Office Hours" ? "text-xs font-bold text-slate-400 uppercase tracking-wider pt-2" : ""}>
+                            <p key={i} className={i % 2 === 0 && detail.title !== "Visit Us" && detail.title !== "Office Hours" ? "text-xs font-bold text-slate-400 uppercase tracking-wider pt-2" : "min-w-0 break-words"}>
                                 {line}
                             </p>
                         ))}

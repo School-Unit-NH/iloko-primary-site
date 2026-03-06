@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import { schoolView4 } from '../../assets';
 
 const AcademicsHero = () => {
     return (
@@ -7,7 +8,7 @@ const AcademicsHero = () => {
             <div
                 className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
                 style={{
-                    backgroundImage: 'url("https://images.unsplash.com/photo-1577896851231-70ef18881754?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80")',
+                    backgroundImage: `url("${schoolView4}")`,
                 }}
             >
                 <div className="absolute inset-0 bg-black/40 mix-blend-multiply"></div>

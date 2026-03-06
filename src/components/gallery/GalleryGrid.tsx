@@ -1,23 +1,47 @@
 import { useState, useMemo, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X, ZoomIn, Loader2 } from 'lucide-react';
-
+import { 
+    schoolBanner, class1,
+    class2, schoolView1,
+    schoolView2, schoolView3,
+    contactUSView, schoolView4,
+    schoolView5, BasketBall,
+    Students, Students2 
+} from '../../assets';
+import { 
+    img1, img2,
+    img3, img4,
+    img5, img6,
+    img7, img8,
+    img9, img10, 
+} from '../../assets/gallery';
 
 const generateMockImages = () => {
     const categories = ["Campus", "Academics", "Sports", "Events"];
     const baseImages = [
-        "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1400&q=80",
-        "https://images.unsplash.com/photo-1577896851231-70ef18881754?ixlib=rb-4.0.3&auto=format&fit=crop&w=1400&q=80",
-        "https://images.unsplash.com/photo-1606900609363-2f0851f50a2b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1400&q=80",
-        "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1400&q=80",
-        "https://images.unsplash.com/photo-1540317580384-e5d43867caa6?ixlib=rb-4.0.3&auto=format&fit=crop&w=1400&q=80",
-        "https://images.unsplash.com/photo-1511629091441-ee46146481b6?ixlib=rb-4.0.3&auto=format&fit=crop&w=1400&q=80",
-        "https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?ixlib=rb-4.0.3&auto=format&fit=crop&w=1400&q=80",
-        "https://images.unsplash.com/photo-1460518451285-97b6aa326961?ixlib=rb-4.0.3&auto=format&fit=crop&w=1400&q=80",
-        "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1400&q=80",
-        "https://images.unsplash.com/photo-1491841550275-ad7854e35ca6?ixlib=rb-4.0.3&auto=format&fit=crop&w=1400&q=80",
-        "https://images.unsplash.com/photo-1543269865-cbf427effbad?ixlib=rb-4.0.3&auto=format&fit=crop&w=1400&q=80",
-        "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?ixlib=rb-4.0.3&auto=format&fit=crop&w=1400&q=80"
+        img1,
+        img3,
+        img4,
+        img5,
+        img6,
+        img7,
+        img8,
+        img9,
+        img10,
+        schoolBanner,
+        class1,
+        class2,
+        schoolView1,
+        schoolView2,
+        schoolView3,
+        contactUSView,
+        schoolView4,
+        schoolView5,
+        BasketBall,
+        Students,
+        Students2,
+        img2,
     ];
 
     return Array.from({ length: 24 }).map((_, i) => ({
