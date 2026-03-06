@@ -6,7 +6,7 @@ const MissionVision = () => {
         <section className="py-24 bg-white relative">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-24">
-
+                    {/* Mission */}
                     <motion.div
                         initial={{ opacity: 0, y: 30 }}
                         whileInView={{ opacity: 1, y: 0 }}
@@ -22,7 +22,7 @@ const MissionVision = () => {
                         </p>
                     </motion.div>
 
-
+                    {/* Vision */}
                     <motion.div
                         initial={{ opacity: 0, y: 30 }}
                         whileInView={{ opacity: 1, y: 0 }}
@@ -39,7 +39,7 @@ const MissionVision = () => {
                     </motion.div>
                 </div>
 
-
+                {/* Core Values */}
                 <motion.div
                     className="mt-24 text-center"
                     initial={{ opacity: 0, y: 30 }}

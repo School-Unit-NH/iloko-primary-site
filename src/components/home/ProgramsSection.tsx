@@ -1,24 +1,26 @@
 import { motion } from 'framer-motion';
 import { ArrowUpRight } from 'lucide-react';
 import { NavLink } from 'react-router-dom';
+import { class1, class2, schoolView1 } from '../../assets';
+
 
 const programs = [
     {
         title: "Nursery & Lower Primary",
         description: "Building strong foundations through interactive learning and core skill development to prepare for their educational journey.",
-        image: "https://images.unsplash.com/photo-1544256718-3b61023f4f65?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+        image: class1,
         tags: ["Core Subjects", "Creative Arts", "Early Learning"]
     },
     {
         title: "Upper Primary (Primary 4-6)",
         description: "Rigorous academic preparation fostering critical thinking and excellence for National Common Entrance Examinations.",
-        image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+        image: class2,
         tags: ["Common Entrance Prep", "Student Leadership", "Project-based"]
     },
     {
         title: "STEM Innovation Hub",
         description: "State-of-the-art facilities where students engage in robotics, coding, and advanced scientific research.",
-        image: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+        image: schoolView1,
         tags: ["Robotics", "Computer Science", "Lab Research"]
     }
 ];

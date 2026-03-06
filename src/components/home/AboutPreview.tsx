@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { NavLink } from 'react-router-dom';
+import { schoolView2, schoolView3 } from '../../assets';
 
 const AboutPreview = () => {
     return (
@@ -7,7 +8,7 @@ const AboutPreview = () => {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex flex-col lg:flex-row items-center gap-16">
 
-
+                    {/* Images cluster side */}
                     <motion.div
                         className="w-full lg:w-1/2 relative"
                         initial={{ opacity: 0, x: -50 }}
@@ -17,21 +18,21 @@ const AboutPreview = () => {
                     >
                         <div className="grid grid-cols-2 gap-2 sm:gap-4 relative z-10">
                             <img loading="lazy"
-                                src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                                src={schoolView3}
                                 alt="Students studying"
                                 className="w-full h-[200px] sm:h-[300px] object-cover rounded-2xl shadow-xl mt-6 sm:mt-12"
                             />
                             <img loading="lazy"
-                                src="https://images.unsplash.com/photo-1577896851231-70ef18881754?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                                src={schoolView2}
                                 alt="Campus architecture"
                                 className="w-full h-[250px] sm:h-[400px] object-cover rounded-2xl shadow-xl"
                             />
                         </div>
-
+                        {/* Decorative element */}
                         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-iloko-yellow rounded-full mix-blend-multiply filter blur-3xl opacity-30 z-0"></div>
                     </motion.div>
 
-
+                    {/* Text side */}
                     <motion.div
                         className="w-full lg:w-1/2"
                         initial={{ opacity: 0, x: 50 }}

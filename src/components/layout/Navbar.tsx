@@ -33,11 +33,11 @@ const Navbar = () => {
                 <div className="flex justify-between items-center">
                     <div className="flex-shrink-0 flex items-center">
                         <NavLink to="/" className={`text-2xl font-serif font-bold ${hasSolidBg ? 'text-iloko-red' : 'text-white'}`}>
-                            ILOKO
+                            IMKA
                         </NavLink>
                     </div>
 
-
+                    {/* Desktop Menu */}
                     <div className="hidden lg:flex space-x-8 items-center">
                         {navLinks.map((link) => (
                             <NavLink
@@ -59,7 +59,7 @@ const Navbar = () => {
                         Apply Now
                     </NavLink>
 
-
+                    {/* Mobile menu button */}
                     <div className="lg:hidden flex items-center">
                         <button
                             onClick={() => setIsOpen(!isOpen)}
@@ -73,7 +73,7 @@ const Navbar = () => {
                 </div>
             </div>
 
-
+            {/* Mobile Menu */}
             <div id="mobile-menu" className={"lg:hidden -z-10 bg-white top-full border-t border-gray-100 shadow-xl absolute w-full left-0 transition-all duration-300 " + (isOpen ? "opacity-100 translate-y-0" : "-translate-y-[100%] opacity-0")}>
                 <div className="px-2 pt-2 pb-6 space-y-1 sm:px-3">
                     {navLinks.map((link) => (

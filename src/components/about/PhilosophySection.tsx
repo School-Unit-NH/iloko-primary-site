@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router';
 import { ArrowRight } from 'lucide-react';
 
 const PhilosophySection = () => {
