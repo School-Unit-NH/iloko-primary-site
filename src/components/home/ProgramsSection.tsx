@@ -45,7 +45,7 @@ const ProgramsSection = () => {
                 <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
                     <div className="max-w-2xl">
                         <h2 className="text-sm font-bold tracking-widest text-iloko-yellow uppercase mb-3">Academic Pathways</h2>
-                        <h3 className="text-4xl md:text-5xl font-serif font-bold mb-6">Discover Your Potential</h3>
+                        <h3 className="text-4xl md:text-5xl font-serif font-bold mb-6 text-iloko-white">Discover Your Potential</h3>
                         <p className="text-lg text-slate-200">
                             Our comprehensive programs are designed to ignite curiosity and foster deep learning across all disciplines.
                         </p>
