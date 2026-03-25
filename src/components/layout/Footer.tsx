@@ -1,5 +1,6 @@
 import { NavLink } from 'react-router-dom';
 import { Facebook, Twitter, Instagram, Linkedin, MapPin, Phone, Mail } from 'lucide-react';
+import { IMKALOGO } from '../../assets';
 
 const Footer = () => {
     return (
@@ -8,7 +9,15 @@ const Footer = () => {
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
                         <div className="col-span-1 md:col-span-1">
-                            <h2 className="text-3xl font-serif font-bold mb-6 text-white">ILOKO</h2>
+                            <h2 className="flex items-center text-3xl font-serif font-bold mb-6 text-white">
+                                <img
+                                    src={IMKALOGO}
+                                    alt="IMKA"
+                                    className="h-8 w-auto"
+                                />
+                                &nbsp;
+                                ILOKO
+                            </h2>
                             <p className="text-slate-300 mb-6 leading-relaxed">
                                 Empowering students to discover their potential through innovative education, character development, and a vibrant community.
                             </p>

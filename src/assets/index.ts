@@ -10,6 +10,7 @@ import contactUSView from "./contact-us.jpg";
 import BasketBall from "./basketball.jpg";
 import Students from "./students.jpg";
 import Students2 from "./students2.jpg";
+import IMKALOGO from "./imka_logo.jpeg";
 
 
 export {
@@ -25,4 +26,5 @@ export {
     BasketBall,
     Students,
     Students2,
+    IMKALOGO,
 }

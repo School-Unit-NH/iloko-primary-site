@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
+import { IMKALOGO } from '../../assets';
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -32,8 +33,13 @@ const Navbar = () => {
             <div className="z-20 relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex justify-between items-center">
                     <div className="flex-shrink-0 flex items-center">
-                        <NavLink to="/" className={`text-2xl font-serif font-bold ${hasSolidBg ? 'text-iloko-red' : 'text-white'}`}>
-                            IMKA
+                        <NavLink to="/" className={`flex items-center text-2xl font-serif font-bold ${hasSolidBg ? 'text-iloko-red' : 'text-white gap-2'}`}>
+                            <img
+                                src={IMKALOGO}
+                                alt="IMKA"
+                                className="h-12 w-auto"
+                            />
+                            IMKA.
                         </NavLink>
                     </div>
 
