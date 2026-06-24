@@ -5,22 +5,22 @@ import { class1, class2, schoolView3 } from '../../assets';
 const supportServices = [
     {
         id: "support-library",
-        title: "Modern Library & Resources",
-        description: "Our expansive library is the academic heart of the school, housing thousands of volumes, digital databases, and quiet study zones to support research and independent learning.",
+        title: "Strong Foundations",
+        description: "We focus on reading, writing, and number work so every child builds a stable base for future learning.",
         icon: BookMarked,
         image: class1,
     },
     {
         id: "support-tutoring",
-        title: "Personalized Tutoring",
-        description: "We offer specialized after-school clinics for core subjects. Teachers are available in small groups to help students master challenging concepts and prepare for major examinations.",
+        title: "Extra Guidance",
+        description: "Teachers give extra support where needed and help children settle comfortably into the right class and pace.",
         icon: UserPlus,
         image: class2,
     },
     {
         id: "support-counseling",
-        title: "Academic & Career Counseling",
-        description: "Our dedicated counseling team guides students through course selection, university applications, and career exploration, ensuring they are well-prepared for life after Iloko.",
+        title: "Care and Safety",
+        description: "Our clinic, security, and child-friendly environment help families feel confident about daily school life.",
         icon: HeartHandshake,
         image: schoolView3,
     }
@@ -49,7 +49,7 @@ const AcademicSupport = () => {
                         viewport={{ once: true }}
                         transition={{ duration: 0.6, delay: 0.1 }}
                     >
-                        We ensure that no student falls behind or lacks direction. Our robust support systems are designed to maximize every student's potential.
+                        We support children with care, guidance, and a safe environment so they can learn comfortably and steadily.
                     </motion.p>
                 </div>
 

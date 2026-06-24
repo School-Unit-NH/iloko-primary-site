@@ -40,7 +40,7 @@ const AboutHero = () => {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
                 >
-                    Discover the legacy, values, and community that make Iloko Primary School a premier destination for holistic education and character development.
+                    Discover the caring, child-centered community that makes Iloko Model Kiddies Academy a trusted place for early learning and primary growth.
                 </motion.p>
             </div>
 

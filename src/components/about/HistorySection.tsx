@@ -17,18 +17,18 @@ const HistorySection = () => {
                     >
                         <h2 className="text-sm font-bold tracking-widest text-iloko-red uppercase mb-3">Heritage</h2>
                         <h3 className="text-4xl md:text-5xl font-serif font-bold text-iloko-red mb-8">
-                            Five Decades of <span className="text-iloko-green italic">Impact</span>
+                            The Story of <span className="text-iloko-green italic">IMKA</span>
                         </h3>
 
                         <div className="space-y-6 text-lg text-slate-700 leading-relaxed">
                             <p>
-                                Founded in 1970 by visionary educators, Iloko Primary School began with a humble cohort of 50 students in a small building. Our founders believed that a rigorous education combined with character training could profoundly change the trajectory of young lives.
+                                Iloko Model Kiddies Academy opened in September 2019 as the primary section of the wider Iloko Model family. It was created to give younger children a strong and caring beginning to formal education.
                             </p>
                             <p>
-                                Over the years, we have grown into a sprawling 50-acre campus with state-of-the-art facilities, serving over 1,000 students annually. Despite our growth, we have never lost sight of our founding ethos: to know and nurture every individual student.
+                                The school has grown into a trusted home for creche, kindergarten, nursery, and primary pupils, with a culture of discipline, care, and steady academic progress.
                             </p>
                             <p>
-                                Today, Iloko alumni can be found leading top organizations, conducting groundbreaking research, and serving their communities across Nigeria and the globe. Our legacy is written in the success and integrity of the young men and women who pass through our gates.
+                                Under the leadership of Mr. Fatomilola Oladosu Abiodun, IMKA continues to invest in safety, digital learning, trained staff, and child-centered development.
                             </p>
                         </div>
                     </motion.div>
@@ -44,13 +44,13 @@ const HistorySection = () => {
                         <div className="relative z-10 rounded-2xl overflow-hidden shadow-2xl">
                             <img loading="lazy"
                                 src={schoolView5}
-                                alt="Historic campus building"
+                                alt="School environment"
                                 className="w-full h-auto object-cover"
                             />
 
                             <div className="absolute bottom-6 left-6 bg-white/90 backdrop-blur-sm p-4 rounded-xl border border-white/20 shadow-lg">
-                                <span className="block text-3xl font-bold text-iloko-red mb-1">Est. 1970</span>
-                                <span className="text-sm text-slate-600 font-semibold uppercase tracking-wider">A Legacy of Excellence</span>
+                                <span className="block text-3xl font-bold text-iloko-red mb-1">Since 2019</span>
+                                <span className="text-sm text-slate-600 font-semibold uppercase tracking-wider">Growing Young Minds</span>
                             </div>
                         </div>
 

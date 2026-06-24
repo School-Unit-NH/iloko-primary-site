@@ -19,7 +19,7 @@ const Footer = () => {
                                 ILOKO
                             </h2>
                             <p className="text-slate-300 mb-6 leading-relaxed">
-                                Empowering students to discover their potential through innovative education, character development, and a vibrant community.
+                                Caring for children from creche to primary with safe learning, strong values, and steady academic support.
                             </p>
                             <div className="flex space-x-4">
                                 <a href="#" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-iloko-yellow hover:text-iloko-red transition-all duration-300">
@@ -53,9 +53,9 @@ const Footer = () => {
                             <ul className="space-y-3">
                                 <li><NavLink to="/academics" className="text-slate-300 hover:text-iloko-yellow transition-colors">Nursery & Lower Primary</NavLink></li>
                                 <li><NavLink to="/academics" className="text-slate-300 hover:text-iloko-yellow transition-colors">Upper Primary</NavLink></li>
-                                <li><NavLink to="/academics" className="text-slate-300 hover:text-iloko-yellow transition-colors">STEM Innovation Hub</NavLink></li>
-                                <li><NavLink to="/gallery" className="text-slate-300 hover:text-iloko-yellow transition-colors">Sports & Athletics</NavLink></li>
-                                <li><NavLink to="/gallery" className="text-slate-300 hover:text-iloko-yellow transition-colors">Creative Arts</NavLink></li>
+                                <li><NavLink to="/academics" className="text-slate-300 hover:text-iloko-yellow transition-colors">Creche & Kindergarten</NavLink></li>
+                                <li><NavLink to="/gallery" className="text-slate-300 hover:text-iloko-yellow transition-colors">Sports & Clubs</NavLink></li>
+                                <li><NavLink to="/gallery" className="text-slate-300 hover:text-iloko-yellow transition-colors">Creative Activities</NavLink></li>
                             </ul>
                         </div>
 
@@ -64,22 +64,22 @@ const Footer = () => {
                             <ul className="space-y-4">
                                 <li className="flex items-start space-x-3">
                                     <MapPin size={20} className="text-iloko-yellow flex-shrink-0 mt-1" />
-                                    <span className="text-slate-300">123 Education Crescent<br />Lekki Phase 1, Lagos, Nigeria</span>
+                                    <span className="text-slate-300">Chief Elijah Fasogbon Way, Ijeda Road<br />Iloko-Ijesa, Osun State</span>
                                 </li>
                                 <li className="flex items-center space-x-3">
                                     <Phone size={20} className="text-iloko-yellow flex-shrink-0" />
-                                    <a href="tel:+2345551234567"><span className="text-slate-300">+234 (555) 123-4567</span></a>
+                                    <a href="tel:08033607953"><span className="text-slate-300">08033607953</span></a>
                                 </li>
                                 <li className="flex items-center space-x-3">
                                     <Mail size={20} className="text-iloko-yellow flex-shrink-0" />
-                                    <a href="mailto:admissions@iloko.edu"><span className="text-slate-300">admissions@iloko.edu</span></a>
+                                    <a href="mailto:admissions@ilokocollege.edu.ng"><span className="text-slate-300">admissions@ilokocollege.edu.ng</span></a>
                                 </li>
                             </ul>
                         </div>
                     </div>
 
                     <div className="pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center text-sm text-slate-400">
-                        <p>&copy; {new Date().getFullYear()} Iloko Primary School. All rights reserved.</p>
+                        <p>&copy; {new Date().getFullYear()} Iloko Model Kiddies Academy. All rights reserved.</p>
                         <div className="flex space-x-4 mt-4 md:mt-0">
                             <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
                             <a href="#" className="hover:text-white transition-colors">Terms of Service</a>

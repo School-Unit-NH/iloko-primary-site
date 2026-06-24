@@ -1,46 +1,41 @@
 import { motion } from 'framer-motion';
 import { Calendar, Clock, MapPin, AlertCircle } from 'lucide-react';
 
-const dates = [
+const items = [
     {
         id: 1,
-        title: "Application Deadline",
-        date: "May 15, 2026",
-        time: "11:59 PM (WAT)",
-        location: "Online Portal or Main Office",
-        type: "deadline"
+        title: "Academic Session Begins",
+        detail: "Every September",
+        time: "New intake begins each year",
+        location: "Iloko Model Kiddies Academy",
     },
     {
         id: 2,
-        title: "First Entrance Examination",
-        date: "June 6, 2026",
-        time: "9:00 AM Prompt",
-        location: "Main School Hall, Iloko",
-        type: "exam"
+        title: "Campus Visits",
+        detail: "Monday to Thursday",
+        time: "10:00 AM - 2:00 PM",
+        location: "Call or WhatsApp ahead",
     },
     {
         id: 3,
-        title: "Second Entrance Examination",
-        date: "June 20, 2026",
-        time: "9:00 AM Prompt",
-        location: "Main School Hall / Regional Centers",
-        type: "exam"
+        title: "Entrance Screening",
+        detail: "By appointment",
+        time: "Friendly child placement check",
+        location: "Admissions Office",
     },
     {
         id: 4,
-        title: "Interview Week",
-        date: "July 6 - 10, 2026",
-        time: "Scheduled Individually",
-        location: "Administrative Block",
-        type: "interview"
+        title: "Application Support",
+        detail: "Available year-round",
+        time: "As students come",
+        location: "Administrative Office, Iloko-Ijesa",
     },
     {
         id: 5,
-        title: "New Student Orientation",
-        date: "August 28, 2026",
-        time: "10:00 AM",
-        location: "School Auditorium",
-        type: "event"
+        title: "School Bus Service",
+        detail: "For day students",
+        time: "Available locally",
+        location: "Route coverage by arrangement",
     }
 ];
 
@@ -49,8 +44,6 @@ const ImportantDates = () => {
         <section className="py-24 bg-white">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex flex-col lg:flex-row gap-16 items-start">
-
-
                     <div className="lg:w-1/3 lg:sticky lg:top-32">
                         <motion.span
                             className="text-iloko-yellow font-semibold tracking-wider uppercase text-sm mb-4 block"
@@ -59,7 +52,7 @@ const ImportantDates = () => {
                             viewport={{ once: true }}
                             transition={{ duration: 0.5 }}
                         >
-                            Mark Your Calendar
+                            Plan Ahead
                         </motion.span>
                         <motion.h2
                             className="text-4xl lg:text-5xl font-serif text-iloko-red mb-6 leading-tight"
@@ -68,7 +61,7 @@ const ImportantDates = () => {
                             viewport={{ once: true }}
                             transition={{ duration: 0.5, delay: 0.1 }}
                         >
-                            Important <br /><span className="italic">Dates</span>
+                            Important <br /><span className="italic">Updates</span>
                         </motion.h2>
                         <motion.p
                             className="text-slate-600 mb-8"
@@ -77,7 +70,7 @@ const ImportantDates = () => {
                             viewport={{ once: true }}
                             transition={{ duration: 0.5, delay: 0.2 }}
                         >
-                            Missing a deadline can delay your admission process. Keep track of these key dates for the upcoming academic session to ensure a smooth application journey.
+                            Keep these key reminders in mind when planning your child's admission or school visit.
                         </motion.p>
 
                         <motion.div
@@ -89,17 +82,16 @@ const ImportantDates = () => {
                         >
                             <AlertCircle className="text-iloko-green shrink-0 mt-1" size={24} />
                             <div>
-                                <h4 className="font-semibold text-iloko-red mb-1">Late Applications</h4>
+                                <h4 className="font-semibold text-iloko-red mb-1">Visit Before You Apply</h4>
                                 <p className="text-sm text-slate-600">
-                                    Applications received after the deadline will only be considered subject to available space in the requested class.
+                                    We welcome parents and guardians to come and see the school before completing the form.
                                 </p>
                             </div>
                         </motion.div>
                     </div>
 
-
                     <div className="lg:w-2/3 w-full space-y-6">
-                        {dates.map((item, index) => (
+                        {items.map((item, index) => (
                             <motion.div
                                 key={item.id}
                                 className="bg-white border hover:border-iloko-yellow/50 rounded-2xl p-6 sm:p-8 shadow-sm hover:shadow-md transition-all duration-300 flex flex-col sm:flex-row gap-6 items-start sm:items-center group"
@@ -108,19 +100,14 @@ const ImportantDates = () => {
                                 viewport={{ once: true }}
                                 transition={{ duration: 0.5, delay: index * 0.1 }}
                             >
-
-                                <div className="bg-iloko-red text-white rounded-xl p-4 min-w-[120px] text-center shrink-0 group-hover:bg-iloko-green transition-colors duration-300">
-                                    <span className="block text-sm font-medium opacity-80 uppercase tracking-wider mb-1">
-                                        {item.date.split(' ')[0]}
+                                <div className="bg-iloko-red text-white rounded-xl p-4 min-w-[150px] text-center shrink-0 group-hover:bg-iloko-green transition-colors duration-300">
+                                    <span className="block text-sm font-medium opacity-80 uppercase tracking-wider mb-2">
+                                        Reminder
                                     </span>
-                                    <span className="block text-3xl font-bold">
-                                        {item.date.split(' ')[1].replace(',', '')}
-                                    </span>
-                                    <span className="block text-sm opacity-80 mt-1">
-                                        {item.date.split(' ')[2]}
+                                    <span className="block text-lg font-bold leading-tight">
+                                        {item.detail}
                                     </span>
                                 </div>
-
 
                                 <div className="flex-1">
                                     <h3 className="text-2xl font-bold text-iloko-red mb-3 group-hover:text-iloko-green transition-colors">
@@ -138,14 +125,12 @@ const ImportantDates = () => {
                                     </div>
                                 </div>
 
-
                                 <div className="hidden sm:flex shrink-0 w-12 h-12 rounded-full bg-slate-50 items-center justify-center text-slate-400 group-hover:scale-110 group-hover:bg-iloko-yellow/10 group-hover:text-iloko-yellow transition-all duration-300">
                                     <Calendar size={24} />
                                 </div>
                             </motion.div>
                         ))}
                     </div>
-
                 </div>
             </div>
         </section>

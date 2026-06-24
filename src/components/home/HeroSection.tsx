@@ -44,7 +44,7 @@ const HeroSection = () => {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
                 >
-                    A vibrant educational community dedicated to empowering students with the skills, knowledge, and character to lead in Nigeria and the world.
+                    Creche, kindergarten, nursery, and primary learning built around strong values, safe care, and steady academic growth.
                 </motion.p>
 
                 <motion.div
@@ -64,7 +64,7 @@ const HeroSection = () => {
                         to="/about"
                         className="group flex items-center gap-2 bg-transparent text-white border-2 border-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-white/20 hover:border-white transition-all duration-300 w-full sm:w-auto justify-center"
                     >
-                        Discover IMKA
+                        Discover the Academy
                     </NavLink>
                 </motion.div>
             </div>

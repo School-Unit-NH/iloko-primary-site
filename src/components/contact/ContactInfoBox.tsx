@@ -6,11 +6,9 @@ const contactDetails = [
         icon: MapPin,
         title: "Visit Us",
         lines: [
-            "Iloko Primary School, "+
-            "Ilesa-Akure Expressway,",
-            " ",
-            "Iloko-Ijesa, Osun State,"+
-            "Nigeria"
+            "Iloko Model Kiddies Academy",
+            "Chief Elijah Fasogbon Way, Ijeda Road",
+            "Iloko-Ijesa, Osun State"
         ]
     },
     {
@@ -18,9 +16,9 @@ const contactDetails = [
         title: "Call Us",
         lines: [
             "General Enquiries:",
-            "+234 (0) 800 ILOKO SCH",
-            "Admissions Office:",
-            "+234 (0) 812 345 6789"
+            "08033607953",
+            "Admissions / WhatsApp:",
+            "08066067063"
         ]
     },
     {
@@ -28,19 +26,19 @@ const contactDetails = [
         title: "Email Us",
         lines: [
             "Information:",
-            "info@ilokoprimary.edu.ng",
+            "ilokomodel.principal@gmail.com",
             "Admissions:",
-            "admissions@ilokoprimary.edu.ng"
+            "admissions@ilokocollege.edu.ng"
         ]
     },
     {
         icon: Clock,
         title: "Office Hours",
         lines: [
-            "Monday - Friday",
-            "8:00 AM - 4:00 PM (WAT)",
-            "Weekend visits by",
-            "appointment only."
+            "Monday - Thursday",
+            "10:00 AM - 2:00 PM",
+            "Visits by",
+            "appointment"
         ]
     }
 ];

@@ -23,7 +23,7 @@ const CurriculumOverview = () => {
                         viewport={{ once: true }}
                         transition={{ duration: 0.6, delay: 0.1 }}
                     >
-                        We offer a comprehensive curriculum that aligns with national standards while incorporating international best practices to provide a truly global education.
+                        Our curriculum supports children from creche to primary with age-appropriate learning, strong foundations, and steady academic progress.
                     </motion.p>
                 </div>
 
@@ -42,7 +42,7 @@ const CurriculumOverview = () => {
                         </div>
                         <h3 className="text-3xl font-bold text-iloko-red mb-4">Nursery & Lower Primary <span className="text-xl font-normal text-slate-500 block sm:inline mt-1 sm:mt-0">(Nursery - Primary 3)</span></h3>
                         <p className="text-slate-600 mb-6 leading-relaxed">
-                            The early years phase focuses on laying a broad and solid foundation. Students are exposed to a wide range of subjects designed to help them discover their interests and aptitudes while developing essential literacy and numeracy skills.
+                            This stage builds the habits, confidence, and early academic skills children need through playful lessons, guidance, and repeated practice.
                         </p>
 
                         <div className="space-y-4 mb-8">
@@ -51,15 +51,15 @@ const CurriculumOverview = () => {
                                 <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-iloko-yellow"></div>Numeracy</li>
                                 <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-iloko-yellow"></div>Literacy</li>
                                 <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-iloko-yellow"></div>Basic Science</li>
+                                <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-iloko-yellow"></div>Social and Citizenship Studies</li>
                                 <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-iloko-yellow"></div>Creative Arts</li>
-                                <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-iloko-yellow"></div>ICT Basics</li>
-                                <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-iloko-yellow"></div>French & Local Languages</li>
+                                <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-iloko-yellow"></div>Digital Technology</li>
                             </ul>
                         </div>
 
                         <div className="bg-white p-4 rounded-xl border border-slate-100 text-sm text-slate-500 flex items-start gap-3">
                             <span className="font-bold text-iloko-red shrink-0">Focus:</span>
-                            <p>Developing strong foundational skills, curiosity, and a love for learning in a play-based and structured environment.</p>
+                            <p>Developing strong foundational skills, curiosity, and a love for learning in a playful but structured environment.</p>
                         </div>
                     </motion.div>
 
@@ -80,30 +80,30 @@ const CurriculumOverview = () => {
                             </div>
                             <h3 className="text-3xl text-iloko-white font-bold mb-4">Upper Primary <span className="text-xl font-normal text-slate-300 block sm:inline mt-1 sm:mt-0">(Primary 4 - 6)</span></h3>
                             <p className="text-slate-300 mb-6 leading-relaxed">
-                                In Upper Primary, students build upon their foundations with more rigorous academic preparation. We emphasize independent thinking, problem-solving, and deep analytical skills across all core subjects to prepare them for secondary education.
+                                In Upper Primary, children strengthen reading, writing, arithmetic, and confidence so they are ready for the next stage of learning.
                             </p>
 
                             <div className="space-y-4 mb-8">
                                 <h4 className="font-semibold text-iloko-yellow border-b border-white/20 pb-2">Core Subjects</h4>
                                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
                                     <div className="bg-white/10 rounded-xl p-3 backdrop-blur-sm border border-white/5 hover:bg-white/20 transition-colors">
-                                        <h5 className="font-bold text-white mb-1">Sciences</h5>
-                                        <p className="text-xs text-slate-300">Basic Science, Mathematics, ICT</p>
+                                        <h5 className="font-bold text-white mb-1">Core Learning</h5>
+                                        <p className="text-xs text-slate-300">English, Mathematics, Basic Science</p>
                                     </div>
                                     <div className="bg-white/10 rounded-xl p-3 backdrop-blur-sm border border-white/5 hover:bg-white/20 transition-colors">
-                                        <h5 className="font-bold text-white mb-1">Arts</h5>
-                                        <p className="text-xs text-slate-300">English, Literature in English, CRS/IRS</p>
+                                        <h5 className="font-bold text-white mb-1">Social Studies</h5>
+                                        <p className="text-xs text-slate-300">Citizenship, values, and community awareness</p>
                                     </div>
                                     <div className="bg-white/10 rounded-xl p-3 backdrop-blur-sm border border-white/5 hover:bg-white/20 transition-colors">
-                                        <h5 className="font-bold text-white mb-1">Vocational</h5>
-                                        <p className="text-xs text-slate-300">Home Economics, Agricultural Science</p>
+                                        <h5 className="font-bold text-white mb-1">Creative Growth</h5>
+                                        <p className="text-xs text-slate-300">Art, music, sports, and clubs</p>
                                     </div>
                                 </div>
                             </div>
 
                             <div className="bg-white/10 p-4 rounded-xl border border-white/10 text-sm text-slate-300 flex items-start gap-3 backdrop-blur-sm">
                                 <span className="font-bold text-iloko-yellow shrink-0">Culmination:</span>
-                                <p>Preparation & registration for the National Common Entrance Examination (NCEE) and State Placement Exams.</p>
+                                <p>Preparation for the next class with confidence, strong habits, and readiness for future placement.</p>
                             </div>
                         </div>
                     </motion.div>

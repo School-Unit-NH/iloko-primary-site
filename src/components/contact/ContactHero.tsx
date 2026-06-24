@@ -42,7 +42,7 @@ const ContactHero = () => {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
                 >
-                    Have questions about our programs or admissions? Our team is here to help you navigate your journey at Iloko.
+                    Have questions about admissions, visits, transport, or fees? Our team is here to help you navigate your journey at Iloko Model Kiddies Academy.
                 </motion.p>
             </div>
 

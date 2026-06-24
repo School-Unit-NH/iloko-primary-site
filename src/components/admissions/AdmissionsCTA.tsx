@@ -31,7 +31,7 @@ const AdmissionsCTA = () => {
                     viewport={{ once: true }}
                     transition={{ duration: 0.6, delay: 0.1 }}
                 >
-                    Ready to Take the <span className="text-iloko-yellow italic">Next Step?</span>
+                    Ready to Start the <span className="text-iloko-yellow italic">Journey?</span>
                 </motion.h2>
 
                 <motion.p
@@ -41,7 +41,7 @@ const AdmissionsCTA = () => {
                     viewport={{ once: true }}
                     transition={{ duration: 0.6, delay: 0.2 }}
                 >
-                    Join a community that celebrates excellence, fosters character, and shapes the leaders of tomorrow. Your journey begins here.
+                    Join a school that values children, supports families, and builds strong foundations for lifelong learning.
                 </motion.p>
 
                 <motion.div
@@ -63,7 +63,7 @@ const AdmissionsCTA = () => {
                         to="/contact"
                         className="group flex items-center gap-2 bg-transparent text-white border-2 border-white/30 px-8 py-5 rounded-full font-bold text-lg hover:bg-white/10 hover:border-white transition-all duration-300 w-full sm:w-auto justify-center"
                     >
-                        Schedule a Tour
+                        Schedule a Visit
                     </NavLink>
                 </motion.div>
 
@@ -74,7 +74,7 @@ const AdmissionsCTA = () => {
                     viewport={{ once: true }}
                     transition={{ duration: 0.6, delay: 0.5 }}
                 >
-                    Need help? Call our admissions office at <span className="text-white">+234 (0) 800 ILOKO EDU</span>
+                    Need help? Call or WhatsApp <span className="text-white">09166147537, 08066067063</span>
                 </motion.p>
             </div>
         </section>

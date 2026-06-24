@@ -21,7 +21,7 @@ const AcademicsHero = () => {
                     transition={{ duration: 0.8, ease: "easeOut" }}
                 >
                     <span className="inline-block py-1 px-3 rounded-full bg-iloko-yellow/20 text-iloko-yellow border border-iloko-yellow/30 text-sm font-semibold tracking-wider uppercase mb-6">
-                        Academic Excellence
+                        Learning Pathways
                     </span>
                 </motion.div>
 
@@ -31,7 +31,7 @@ const AcademicsHero = () => {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
                 >
-                    A Culture of <span className="text-transparent bg-clip-text bg-gradient-to-r from-iloko-yellow to-yellow-200 italic">Discovery</span>
+                    Growing <span className="text-transparent bg-clip-text bg-gradient-to-r from-iloko-yellow to-yellow-200 italic">Young Minds</span>
                 </motion.h1>
 
                 <motion.p
@@ -40,7 +40,7 @@ const AcademicsHero = () => {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
                 >
-                    Our rigorous curriculum and innovative teaching methods inspire a lifelong love of learning and prepare students for global success.
+                    From creche to primary, our classrooms combine care, structure, and strong teaching to build confident learners.
                 </motion.p>
             </div>
 

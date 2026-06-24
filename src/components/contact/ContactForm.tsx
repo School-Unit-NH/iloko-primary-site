@@ -37,7 +37,7 @@ const ContactForm = () => {
 
             <div className="p-8 md:p-10">
                 <h2 className="text-3xl font-serif font-bold text-iloko-red mb-2">Send a Message</h2>
-                <p className="text-slate-500 mb-8">Fill out the form below and our team will get back to you promptly.</p>
+                <p className="text-slate-500 mb-8">Send us your questions about admission, visits, transportation, or school fees.</p>
 
                 {isSubmitted ? (
                     <motion.div
@@ -106,8 +106,9 @@ const ContactForm = () => {
                             >
                                 <option value="general">General Inquiry</option>
                                 <option value="admissions">Admissions & Enrollment</option>
-                                <option value="academics">Curriculum & Academics</option>
-                                <option value="support">Technical Support</option>
+                                <option value="visits">School Visit</option>
+                                <option value="transport">Transportation</option>
+                                <option value="fees">Fees & Support</option>
                             </select>
                         </div>
 

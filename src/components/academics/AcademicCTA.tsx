@@ -24,10 +24,10 @@ const AcademicCTA = () => {
                     transition={{ duration: 0.6 }}
                 >
                     <h2 className="text-4xl md:text-5xl font-serif text-iloko-red font-bold mb-6">
-                        Dive Deeper into Our Program
+                        Learn More About Admissions
                     </h2>
                     <p className="text-xl text-iloko-red/80 mb-10 max-w-2xl mx-auto">
-                        Download the full course catalog or review our academic calendar to see how we structure the school year for success.
+                        Contact the school for the current fee breakdown, visit hours, or to request an admission form.
                     </p>
                 </motion.div>
 
@@ -40,12 +40,12 @@ const AcademicCTA = () => {
                 >
                     <button className="group flex items-center gap-3 bg-iloko-red text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-white hover:text-iloko-red transition-all duration-300 w-full sm:w-auto justify-center shadow-lg hover:shadow-xl">
                         <Download size={20} className="group-hover:-translate-y-1 transition-transform" />
-                        Download Syllabus
+                        Request Form
                     </button>
 
                     <button className="group flex items-center gap-3 bg-transparent text-iloko-red border-2 border-iloko-red px-8 py-4 rounded-full font-bold text-lg hover:bg-iloko-red hover:text-white transition-all duration-300 w-full sm:w-auto justify-center">
                         <CalendarDays size={20} />
-                        Academic Calendar
+                        Visit Schedule
                     </button>
                 </motion.div>
             </div>

@@ -3,25 +3,25 @@ import { class1, schoolView4 } from '../../assets';
 
 const news = [
     {
-        category: "Campus News",
-        title: "Iloko Science Team Wins Lagos State Science Olympiad",
-        date: "Oct 15, 2026",
+        category: "News",
+        title: "IMKA Celebrates a Strong Primary Foundation",
+        date: "Current Session",
         image: class1,
-        excerpt: "Our upper primary robotics team secured first place at the highly competitive state tournament..."
+        excerpt: "Children at Iloko Model Kiddies Academy learn through a balanced mix of care, discipline, and strong academic support."
     },
     {
-        category: "Events",
-        title: "Annual Inter-House Sports Competition Approaching",
-        date: "Nov 02, 2026",
+        category: "Update",
+        title: "Parents Are Welcome to Visit the School",
+        date: "Monday to Thursday",
         image: schoolView4,
-        excerpt: "Join us for a weekend celebrating the incredible athletic and sportsmanship talents of our students."
+        excerpt: "The school welcomes parents and guardians to visit, ask questions, and see the learning environment firsthand."
     }
 ];
 
 const events = [
-    { day: "24", month: "Oct", title: "Open House for Prospective Families", time: "9:00 AM - 1:00 PM" },
-    { day: "31", month: "Oct", title: "PTA General Meeting", time: "10:00 AM" },
-    { day: "05", month: "Nov", title: "Primary Boys Football Semifinals", time: "4:00 PM @ School Field" },
+    { day: "19", month: "Jun", title: "Annual School Cultural Fiesta", time: "Friday, 19th June 2026" },
+    { day: "Sep", month: "Start", title: "New academic session begins", time: "Every September" },
+    { day: "Mon", month: "Thu", title: "Campus visits by appointment", time: "10:00 AM - 2:00 PM" },
 ];
 
 const NewsEvents = () => {
@@ -29,11 +29,9 @@ const NewsEvents = () => {
         <section className="py-24 bg-white">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-16">
-
-
                     <div className="lg:col-span-2">
                         <div className="flex justify-between items-center mb-10">
-                            <h2 className="text-4xl font-serif font-bold text-iloko-red">Latest News</h2>
+                            <h2 className="text-4xl font-serif font-bold text-iloko-red">Latest Updates</h2>
                             <button className="text-iloko-green font-semibold flex items-center gap-1 hover:text-iloko-red transition-colors">
                                 View All <ArrowRight size={18} />
                             </button>
@@ -43,7 +41,8 @@ const NewsEvents = () => {
                             {news.map((item, index) => (
                                 <div key={index} className="group cursor-pointer">
                                     <div className="overflow-hidden rounded-2xl mb-4 relative aspect-[4/3]">
-                                        <img loading="lazy"
+                                        <img
+                                            loading="lazy"
                                             src={item.image}
                                             alt={item.title}
                                             className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
@@ -67,10 +66,9 @@ const NewsEvents = () => {
                         </div>
                     </div>
 
-
                     <div className="lg:col-span-1">
                         <div className="flex justify-between items-center mb-10">
-                            <h2 className="text-4xl font-serif font-bold text-iloko-red">Upcoming</h2>
+                            <h2 className="text-4xl font-serif font-bold text-iloko-red">Quick Info</h2>
                         </div>
 
                         <div className="bg-slate-50 rounded-2xl p-6 border border-slate-100 shadow-lg shadow-slate-200/50">
@@ -90,11 +88,10 @@ const NewsEvents = () => {
                             </div>
 
                             <button className="w-full mt-8 py-3 border-2 border-slate-300 text-slate-700 rounded-full font-semibold hover:border-iloko-red hover:text-iloko-red transition-colors">
-                                Full Calendar
+                                Contact the School
                             </button>
                         </div>
                     </div>
-
                 </div>
             </div>
         </section>

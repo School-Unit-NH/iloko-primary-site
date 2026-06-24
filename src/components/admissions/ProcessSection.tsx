@@ -5,7 +5,7 @@ const processSteps = [
     {
         id: 1,
         title: "Enquiry & Application",
-        description: "Begin identifying a bright future. Fill out our online application form or visit the school for a physical copy. A non-refundable application fee applies.",
+        description: "Collect the form from the school office in Iloko-Ijesa or request guidance online. The application fee is non-refundable.",
         icon: ClipboardEdit,
         color: "text-blue-500",
         bgColor: "bg-blue-100",
@@ -13,7 +13,7 @@ const processSteps = [
     {
         id: 2,
         title: "Document Submission",
-        description: "Submit all required documentation including previous academic records, birth certificate, and passport photographs for our review.",
+        description: "Submit two passport photos, a birth certificate or age declaration, and school report for transfer pupils.",
         icon: FileCheck,
         color: "text-iloko-yellow",
         bgColor: "bg-yellow-100",
@@ -21,7 +21,7 @@ const processSteps = [
     {
         id: 3,
         title: "Entrance Examination",
-        description: "Prospective students sit for our placement examination, evaluating their proficiency in English, Mathematics, and General Knowledge.",
+        description: "Children are assessed in the right class areas so we can place them well and support them properly.",
         icon: GraduationCap,
         color: "text-purple-500",
         bgColor: "bg-purple-100",
@@ -29,7 +29,7 @@ const processSteps = [
     {
         id: 4,
         title: "Interview",
-        description: "Successful candidates from the written exam, along with their parents, are invited for a personal interview with the admissions committee.",
+        description: "The child and parent or guardian have a friendly oral interview with the school team.",
         icon: Users,
         color: "text-iloko-green",
         bgColor: "bg-red-100",
@@ -37,7 +37,7 @@ const processSteps = [
     {
         id: 5,
         title: "Offer & Enrollment",
-        description: "Upon successful completion of all stages, an offer of admission is made. Acceptance and tuition fee payment secure the student's place.",
+        description: "Once admission is offered, parents complete registration and pay the school fees for the term.",
         icon: CheckCircle,
         color: "text-green-500",
         bgColor: "bg-green-100",
@@ -69,7 +69,7 @@ const ProcessSection = () => {
                         viewport={{ once: true }}
                         transition={{ duration: 0.6, delay: 0.1 }}
                     >
-                        We have designed a straightforward and transparent admissions process to evaluate each applicant holistically and ensure a great fit for our community.
+                        Our admissions process helps us understand each child and place them in the right class with the right support.
                     </motion.p>
                 </div>
 

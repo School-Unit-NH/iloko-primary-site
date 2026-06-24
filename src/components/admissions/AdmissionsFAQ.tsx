@@ -6,32 +6,32 @@ const faqs = [
     {
         id: 1,
         question: "What is the age requirement for admission?",
-        answer: "For entry into Nursery, candidates should be at least 3 years old by September of the year of admission. For entry into Primary 1, candidates should be at least 5 years old. Corresponding age requirements apply for other classes. Please contact the admissions office for specific details."
+        answer: "For Primary 1, children should be at least 5 years old by September of the admission year. Other classes are placed based on age and the last class completed."
     },
     {
         id: 2,
         question: "Do you accept mid-term or mid-year transfers?",
-        answer: "We generally advise students to start at the beginning of the academic year for optimal integration. However, transfers are considered on a case-by-case basis depending on space availability and the applicant's academic standing."
+        answer: "Yes. We admit children as they come, and transfer pupils should bring their last report card and transfer documents."
     },
     {
         id: 3,
         question: "What subjects are covered in the entrance examination?",
-        answer: "The written entrance examination assesses candidates in Mathematics, English Language, and General Knowledge (including Basic Science and Social Studies). Past questions are not provided, but the exam covers standard primary school curricula."
+        answer: "The entrance screening helps us understand the child's level so we can place them correctly and support them well."
     },
     {
         id: 4,
-        question: "Is boarding compulsory for all students?",
-        answer: "No, boarding is not compulsory. We offer full boarding, weekly boarding (Monday to Friday), and day options to cater to different family needs and geographical locations."
+        question: "Is transportation available?",
+        answer: "Yes. School buses are available for day students living within the service area."
     },
     {
         id: 5,
-        question: "How can international students apply?",
-        answer: "International students follow the same online application process. Interviews can be conducted virtually via video conferencing, and entrance examinations can often be invigilated at the candidate's current school by arrangement."
+        question: "What is the school year schedule?",
+        answer: "The academic session begins in September each year, although pupils can also be admitted as they come."
     },
     {
         id: 6,
-        question: "What support is available for students with special educational needs?",
-        answer: "We strive to create an inclusive environment. Parents must disclose any diagnosed special needs during the application process so we can assess whether our current learning support resources can adequately meet the child's requirements."
+        question: "Does the school support all faiths?",
+        answer: "Yes. Iloko Model Kiddies Academy is non-religious-based, admits pupils of all faiths, and includes prayer times for both Muslims and Christians."
     }
 ];
 
@@ -63,7 +63,7 @@ const AdmissionsFAQ = () => {
                         viewport={{ once: true }}
                         transition={{ duration: 0.6, delay: 0.1 }}
                     >
-                        Find quick answers to common queries about our admissions process, requirements, and policies.
+                        Find quick answers about age, transfers, transport, fees, and school visits.
                     </motion.p>
                 </div>
 
@@ -119,7 +119,7 @@ const AdmissionsFAQ = () => {
                         href="/contact"
                         className="inline-flex items-center text-iloko-red font-semibold hover:text-iloko-green transition-colors duration-300 border-b-2 border-transparent hover:border-iloko-green pb-1"
                     >
-                        Contact our Admissions Team
+                        Contact the School Office
                     </a>
                 </motion.div>
 

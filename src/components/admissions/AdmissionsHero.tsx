@@ -30,7 +30,7 @@ const AdmissionsHero = () => {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
                 >
-                    Join Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-iloko-yellow to-yellow-200 italic">Community</span>
+                    Join Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-iloko-yellow to-yellow-200 italic">Family</span>
                 </motion.h1>
 
                 <motion.p
@@ -39,7 +39,7 @@ const AdmissionsHero = () => {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
                 >
-                    Embark on an educational journey that prioritizes academic excellence, character development, and holistic growth.
+                    Apply for creche, kindergarten, nursery, or primary placement in a safe school that values children, faith, and family partnership.
                 </motion.p>
             </div>
 

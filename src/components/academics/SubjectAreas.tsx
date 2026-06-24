@@ -1,51 +1,51 @@
 import { motion } from 'framer-motion';
 import { Languages, Calculator, Globe, Laptop, Brush, Users } from 'lucide-react';
 
-const departments = [
+const learningAreas = [
     {
-        id: "dept-languages",
-        title: "Languages",
-        description: "Fostering effective communication through mastery of English, French, and major Nigerian languages, alongside profound literary analysis.",
+        id: "area-literacy",
+        title: "Literacy",
+        description: "Reading, writing, speaking, and listening skills that help children communicate clearly and grow in confidence.",
         icon: Languages,
         color: "text-blue-500",
         bgColor: "bg-blue-50",
     },
     {
-        id: "dept-math-sci",
-        title: "Mathematics & Sciences",
-        description: "Cultivating analytical thinking and empirical observation through rigorous coursework in Mathematics, Physics, Chemistry, and Biology.",
+        id: "area-numeracy",
+        title: "Numeracy",
+        description: "Counting, number sense, and practical mathematics built through regular practice and guided support.",
         icon: Calculator,
         color: "text-green-500",
         bgColor: "bg-green-50",
     },
     {
-        id: "dept-humanities",
-        title: "Humanities",
-        description: "Exploring the human experience and societal evolution through History, Government, Geography, and Religious Studies.",
+        id: "area-social",
+        title: "Social Studies",
+        description: "Helping pupils understand family, community, values, and responsible citizenship from an early age.",
         icon: Globe,
         color: "text-amber-500",
         bgColor: "bg-amber-50",
     },
     {
-        id: "dept-technology",
-        title: "Technology & Engineering",
-        description: "Preparing students for the digital age with comprehensive training in Computer Studies, Basic Technology, and Data Processing.",
+        id: "area-technology",
+        title: "Digital Technology",
+        description: "Age-appropriate computer exposure that introduces children to simple technology skills in a guided way.",
         icon: Laptop,
         color: "text-purple-500",
         bgColor: "bg-purple-50",
     },
     {
-        id: "dept-arts",
-        title: "Arts & Aesthetics",
-        description: "Encouraging creative expression and appreciation of beauty through Fine Arts, Music, and Drama.",
+        id: "area-creativity",
+        title: "Creative Arts",
+        description: "Art, music, drama, and expression that help children discover talent and enjoy learning.",
         icon: Brush,
         color: "text-red-500",
         bgColor: "bg-red-50",
     },
     {
-        id: "dept-commercial",
-        title: "Business & Commerce",
-        description: "Instilling financial literacy and entrepreneurial acumen through Economics, Accounting, and Commerce.",
+        id: "area-values",
+        title: "Character Building",
+        description: "Daily habits, prayer time, respect, and teamwork that shape good behavior and healthy relationships.",
         icon: Users,
         color: "text-teal-500",
         bgColor: "bg-teal-50",
@@ -56,7 +56,6 @@ const SubjectAreas = () => {
     return (
         <section className="py-24 bg-slate-50 relative">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-
                 <div className="text-center mb-16">
                     <motion.h2
                         className="text-4xl md:text-5xl font-serif text-iloko-red mb-6"
@@ -65,7 +64,7 @@ const SubjectAreas = () => {
                         viewport={{ once: true }}
                         transition={{ duration: 0.6 }}
                     >
-                        Academic <span className="text-iloko-yellow italic">Departments</span>
+                        Learning <span className="text-iloko-yellow italic">Areas</span>
                     </motion.h2>
                     <motion.p
                         className="text-lg text-slate-600 max-w-2xl mx-auto"
@@ -74,37 +73,32 @@ const SubjectAreas = () => {
                         viewport={{ once: true }}
                         transition={{ duration: 0.6, delay: 0.1 }}
                     >
-                        Our specialized departments are staffed by expert educators passionate about their disciplines, ensuring rigorous and engaging instruction.
+                        Our program blends academic basics, creativity, technology, and character development so every child grows well-rounded.
                     </motion.p>
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    {departments.map((dept, index) => (
+                    {learningAreas.map((area, index) => (
                         <motion.div
-                            key={dept.id}
+                            key={area.id}
                             className="bg-white rounded-2xl p-8 border border-slate-100 shadow-sm hover:shadow-xl hover:border-iloko-yellow/30 transition-all duration-300 group"
                             initial={{ opacity: 0, y: 30 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ duration: 0.5, delay: index * 0.1 }}
                         >
-                            <div className={`w-14 h-14 rounded-xl flex items-center justify-center mb-6 group-hover:-translate-y-2 transition-transform duration-300 ${dept.bgColor} ${dept.color}`}>
-                                <dept.icon size={28} />
+                            <div className={`w-14 h-14 rounded-xl flex items-center justify-center mb-6 group-hover:-translate-y-2 transition-transform duration-300 ${area.bgColor} ${area.color}`}>
+                                <area.icon size={28} />
                             </div>
                             <h3 className="text-xl font-bold text-iloko-red mb-3 group-hover:text-iloko-green transition-colors">
-                                {dept.title}
+                                {area.title}
                             </h3>
                             <p className="text-slate-600 leading-relaxed text-sm">
-                                {dept.description}
+                                {area.description}
                             </p>
-
-                            <div className="mt-6 pt-6 border-t border-slate-50 flex items-center justify-between opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                                <span className="text-sm font-semibold text-iloko-yellow cursor-pointer hover:underline">Explore Syllabus</span>
-                            </div>
                         </motion.div>
                     ))}
                 </div>
-
             </div>
         </section>
     );

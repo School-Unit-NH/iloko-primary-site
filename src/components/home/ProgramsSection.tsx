@@ -3,25 +3,24 @@ import { ArrowUpRight } from 'lucide-react';
 import { NavLink } from 'react-router-dom';
 import { class1, class2, schoolView1 } from '../../assets';
 
-
 const programs = [
     {
-        title: "Nursery & Lower Primary",
-        description: "Building strong foundations through interactive learning and core skill development to prepare for their educational journey.",
+        title: "Creche & Kindergarten",
+        description: "Gentle early years care that helps children settle, play, and begin learning in a loving and secure setting.",
         image: class1,
-        tags: ["Core Subjects", "Creative Arts", "Early Learning"]
+        tags: ["Creche", "Kindergarten", "Early Development"]
     },
     {
-        title: "Upper Primary (Primary 4-6)",
-        description: "Rigorous academic preparation fostering critical thinking and excellence for National Common Entrance Examinations.",
+        title: "Nursery",
+        description: "Structured foundational learning that builds literacy, numeracy, confidence, and social growth for young children.",
         image: class2,
-        tags: ["Common Entrance Prep", "Student Leadership", "Project-based"]
+        tags: ["Literacy", "Numeracy", "Character"]
     },
     {
-        title: "STEM Innovation Hub",
-        description: "State-of-the-art facilities where students engage in robotics, coding, and advanced scientific research.",
+        title: "Primary Classes",
+        description: "Core primary education supported by qualified teaching, safe transport, and preparation for the next stage of learning.",
         image: schoolView1,
-        tags: ["Robotics", "Computer Science", "Lab Research"]
+        tags: ["Primary", "Core Subjects", "Preparedness"]
     }
 ];
 
@@ -44,17 +43,17 @@ const ProgramsSection = () => {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
                     <div className="max-w-2xl">
-                        <h2 className="text-sm font-bold tracking-widest text-iloko-yellow uppercase mb-3">Academic Pathways</h2>
-                        <h3 className="text-4xl md:text-5xl font-serif font-bold mb-6 text-iloko-white">Discover Your Potential</h3>
+                        <h2 className="text-sm font-bold tracking-widest text-iloko-yellow uppercase mb-3">Our Classes</h2>
+                        <h3 className="text-4xl md:text-5xl font-serif font-bold mb-6 text-iloko-white">Learning for Every Stage</h3>
                         <p className="text-lg text-slate-200">
-                            Our comprehensive programs are designed to ignite curiosity and foster deep learning across all disciplines.
+                            From creche to primary, our classrooms are designed to help children grow at the right pace with care and consistency.
                         </p>
                     </div>
                     <NavLink
                         to="/academics"
                         className="flex items-center gap-2 bg-white/10 text-white px-6 py-3 rounded-full hover:bg-iloko-yellow hover:text-iloko-red transition-all duration-300 shrink-0"
                     >
-                        View All Programs
+                        View Academics
                     </NavLink>
                 </div>
 
@@ -72,7 +71,8 @@ const ProgramsSection = () => {
                             className="group flex flex-col bg-white/5 border border-white/10 rounded-2xl overflow-hidden hover:bg-white/10 transition-colors duration-300"
                         >
                             <div className="relative h-64 overflow-hidden">
-                                <img loading="lazy"
+                                <img
+                                    loading="lazy"
                                     src={program.image}
                                     alt={program.title}
                                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
@@ -84,7 +84,7 @@ const ProgramsSection = () => {
                             </div>
 
                             <div className="p-8 flex-grow flex flex-col">
-                                <h4 className="text-2xl text-iloko-yellow  font-serif font-bold mb-3">{program.title}</h4>
+                                <h4 className="text-2xl text-iloko-yellow font-serif font-bold mb-3">{program.title}</h4>
                                 <p className="text-slate-200 mb-6 flex-grow">{program.description}</p>
                                 <div className="flex flex-wrap gap-2 mt-auto">
                                     {program.tags.map((tag, i) => (

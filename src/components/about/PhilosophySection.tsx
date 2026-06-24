@@ -16,10 +16,10 @@ const PhilosophySection = () => {
                         transition={{ duration: 0.6 }}
                     >
                         <h2 className="text-3xl md:text-4xl font-serif font-bold text-iloko-red mb-6">
-                            Ready to Experience Iloko?
+                            Ready to Visit Iloko?
                         </h2>
                         <p className="text-lg text-slate-600 max-w-2xl mx-auto lg:mx-0">
-                            Our educational philosophy centers on active, project-based learning. We don't just teach for exams; we ignite a lifelong passion for discovery. Join us and be part of a vibrant learning community.
+                            We welcome parents and guardians to visit the school, meet the team, and see how our caring approach supports children from creche to primary.
                         </p>
                     </motion.div>
 

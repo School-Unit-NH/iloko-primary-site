@@ -18,7 +18,7 @@ const MissionVision = () => {
                         <Target className="w-12 h-12 text-iloko-green mb-6 relative z-10" />
                         <h2 className="text-3xl font-serif font-bold text-iloko-red mb-4 relative z-10">Our Mission</h2>
                         <p className="text-lg text-slate-700 leading-relaxed relative z-10">
-                            To empower students with the knowledge, skills, and moral foundation necessary to excel academically and contribute positively to society. We strive to cultivate critical thinkers who are compassionate and resilient.
+                            To provide and maintain quality education in a safe learning environment where everyone is valued, and parents, families, and community work with us to help every child reach their highest ability.
                         </p>
                     </motion.div>
 
@@ -34,7 +34,7 @@ const MissionVision = () => {
                         <Compass className="w-12 h-12 text-iloko-yellow mb-6 relative z-10" />
                         <h2 className="text-3xl font-serif font-bold text-white mb-4 relative z-10">Our Vision</h2>
                         <p className="text-lg text-slate-300 leading-relaxed relative z-10">
-                            To be the leading primary educational institution in West Africa, recognized globally for producing innovative leaders who drive sustainable transformation in their communities and the world.
+                            To be a world-class value-driven citadel of learning for quality and affordable education.
                         </p>
                     </motion.div>
                 </div>
@@ -52,10 +52,10 @@ const MissionVision = () => {
 
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
                         {[
-                            { title: 'Excellence', desc: 'Striving for the highest standards in all endeavors.' },
-                            { title: 'Integrity', desc: 'Acting with honesty, transparency, and strong moral principles.' },
-                            { title: 'Innovation', desc: 'Embracing creative solutions to complex problems.' },
-                            { title: 'Compassion', desc: 'Fostering a caring, inclusive, and supportive community.' }
+                            { title: 'Excellence', desc: 'Helping every child achieve their highest level of ability.' },
+                            { title: 'Character', desc: 'Building honesty, responsibility, and respect in daily school life.' },
+                            { title: 'Innovation', desc: 'Using digital learning and creative problem-solving to grow minds.' },
+                            { title: 'Community', desc: 'Working in partnership with parents, families, and stakeholders.' }
                         ].map((value, idx) => (
                             <div key={idx} className="flex flex-col items-center">
                                 <div className="w-16 h-16 rounded-full bg-slate-100 flex items-center justify-center mb-4 text-iloko-red group hover:bg-iloko-yellow transition-colors duration-300">

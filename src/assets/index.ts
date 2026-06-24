@@ -11,20 +11,21 @@ import BasketBall from "./basketball.jpg";
 import Students from "./students.jpg";
 import Students2 from "./students2.jpg";
 import IMKALOGO from "./imka_logo.jpeg";
-
+import principal from "./principal.png";
 
 export {
-    schoolBanner,
-    class1,
-    class2,
-    schoolView1,
-    schoolView2,
-    schoolView3,
-    contactUSView,
-    schoolView4,
-    schoolView5,
-    BasketBall,
-    Students,
-    Students2,
-    IMKALOGO,
-}
+  schoolBanner,
+  class1,
+  class2,
+  schoolView1,
+  schoolView2,
+  schoolView3,
+  contactUSView,
+  schoolView4,
+  schoolView5,
+  BasketBall,
+  Students,
+  Students2,
+  IMKALOGO,
+  principal,
+};

@@ -5,26 +5,26 @@ import { schoolView2 } from '../../assets';
 const approaches = [
     {
         id: "approach-practical",
-        title: "Hands-on Discovery",
-        description: "We emphasize experiential learning, particularly in the sciences, moving beyond rote memorization to active, practical experimentation in our well-equipped laboratories.",
+        title: "Play-Based Start",
+        description: "Our youngest learners explore through songs, stories, play, and guided practice that make learning enjoyable and memorable.",
         icon: Microscope,
     },
     {
         id: "approach-tech",
-        title: "Digital Integration",
-        description: "Technology is seamlessly woven into our pedagogy. Students utilize interactive panels, educational software, and coding tools to enhance core skill acquisition.",
+        title: "Simple Technology",
+        description: "Children are introduced to computers and digital tools in age-appropriate ways that support learning and curiosity.",
         icon: Code,
     },
     {
         id: "approach-critical",
-        title: "Critical Thinking",
-        description: "Our classrooms are forums for robust debate and analysis. We challenge students to question assumptions, synthesize information, and articulate their own viewpoints logically.",
+        title: "Confidence Building",
+        description: "We help children speak up, ask questions, and develop good habits that support steady academic progress.",
         icon: Lightbulb,
     },
     {
         id: "approach-collab",
-        title: "Collaborative Projects",
-        description: "Real-world problem solving often requires teamwork. We integrate group projects and presentations to develop essential communication and leadership skills.",
+        title: "Parent Partnership",
+        description: "Teachers and parents work together so children receive the support they need at school and at home.",
         icon: Presentation,
     }
 ];
@@ -91,7 +91,7 @@ const LearningApproach = () => {
                             viewport={{ once: true }}
                             transition={{ duration: 0.5, delay: 0.2 }}
                         >
-                            Our educational philosophy centers on active engagement. We believe students learn best when they are challenged to construct knowledge rather than merely receive it.
+                            Our approach is warm, structured, and practical. We build strong habits early so children can learn with confidence and joy.
                         </motion.p>
 
                         <div className="space-y-8">
